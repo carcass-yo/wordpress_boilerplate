@@ -1,0 +1,18 @@
+{
+  "name": "roots/disallow-indexing",
+  "description": "Disallow site indexing on non-production environments",
+  "type": "wordpress-muplugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Constantine Karnaukhov",
+      "email": "genteelknight@gmail.com"
+    }
+  ],
+  "extra": {
+    "installer-name": "disallow-indexing"
+  },
+  "require": {
+    "composer/installers": "~1.0"
+  }
+}

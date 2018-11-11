@@ -1,0 +1,52 @@
+{
+  "name": "vendor/package-name",
+  "description": "",
+  "type": "project",
+  "keywords": [
+    "wordpress",
+    "composer",
+    "docker",
+    "wp"
+  ],
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Constantine Karnaukhov",
+      "email": "genteelknight@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "path",
+      "url": "app/mu-plugins/disallow-indexing"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "^1.4",
+    "johnpbloch/wordpress": "4.9.8",
+    "oscarotero/env": "^1.1.0",
+    "wpackagist-plugin/akismet": "^4.0.8",
+    "roots/disallow-indexing": "*"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "wp/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "wp"
+  },
+  "scripts": {
+    "test": [
+      "phpcs"
+    ]
+  }
+}
