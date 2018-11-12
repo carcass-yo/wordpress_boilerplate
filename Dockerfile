@@ -1,4 +1,4 @@
-FROM spaceonfire/nginx-php-fpm:1.0.0-beta.3
+FROM spaceonfire/nginx-php-fpm:1.0.0-beta.4
 
 ENV SOF_PRESET=wordpress \
 	PAGER=more
