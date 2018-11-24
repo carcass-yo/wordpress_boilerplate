@@ -1,6 +1,6 @@
 {
-  "name": "roots/disallow-indexing",
-  "description": "Disallow site indexing on non-production environments",
+  "name": "spaceonfire/muplugins",
+  "description": "",
   "type": "wordpress-muplugin",
   "license": "MIT",
   "authors": [
@@ -9,9 +9,6 @@
       "email": "genteelknight@gmail.com"
     }
   ],
-  "extra": {
-    "installer-name": "disallow-indexing"
-  },
   "require": {
     "composer/installers": "~1.0"
   }
